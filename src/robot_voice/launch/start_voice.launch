@@ -1,0 +1,21 @@
+<launch>
+    <!-- launch-prefix表示在一个独立的终端中运行该节点 -->
+    <node pkg="robot_voice" name="tts_subscribe" type="tts_subscribe" output="screen" launch-prefix="gnome-terminal -e"> </node>
+
+    <!-- 键盘输入转换的文字 -->
+    <node pkg="robot_voice" name="publish_voice" type="publish_voice" output="screen" launch-prefix="gnome-terminal -e"> </node>
+
+    
+
+ </launch>
+
+
+
+
+
+
+
+
+
+
+

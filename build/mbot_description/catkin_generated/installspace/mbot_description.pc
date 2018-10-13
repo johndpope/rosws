@@ -1,0 +1,8 @@
+prefix=/home/wode/rosws/install
+
+Name: mbot_description
+Description: Description of mbot_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/wode/rosws/install/lib 
+Requires: 

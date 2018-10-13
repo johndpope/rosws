@@ -1,0 +1,8 @@
+prefix=/home/wode/rosws/install
+
+Name: rosserial_arduino
+Description: Description of rosserial_arduino
+Version: 0.7.7
+Cflags: -I/home/wode/rosws/install/include
+Libs: -L/home/wode/rosws/install/lib 
+Requires: message_runtime
