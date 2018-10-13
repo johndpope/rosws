@@ -77,7 +77,7 @@ int main (int argc, char** argv)
             // pitchData << pitch << "\n";
             // rollData <<roll<< "\n";
 
-            // read_pub.publish(result);
+             read_pub.publish(result);
 
             // yawData.close();
             // pitchData.close();

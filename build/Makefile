@@ -2779,84 +2779,6 @@ mbot_bringup/fast:
 .PHONY : mbot_bringup/fast
 
 #=============================================================================
-# Target rules for targets named std_srvs_generate_messages_lisp
-
-# Build rule for target.
-std_srvs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
-.PHONY : std_srvs_generate_messages_lisp
-
-# fast build rule for target.
-std_srvs_generate_messages_lisp/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
-.PHONY : std_srvs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_eus
-
-# Build rule for target.
-std_srvs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
-.PHONY : std_srvs_generate_messages_eus
-
-# fast build rule for target.
-std_srvs_generate_messages_eus/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_eus.dir/build
-.PHONY : std_srvs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_nodejs
-
-# Build rule for target.
-std_srvs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named mpu6050_serial_to_imu_node
-
-# Build rule for target.
-mpu6050_serial_to_imu_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 mpu6050_serial_to_imu_node
-.PHONY : mpu6050_serial_to_imu_node
-
-# fast build rule for target.
-mpu6050_serial_to_imu_node/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/mpu6050_serial_to_imu_node.dir/build.make mpu6050_serial_to_imu/CMakeFiles/mpu6050_serial_to_imu_node.dir/build
-.PHONY : mpu6050_serial_to_imu_node/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_cpp
-
-# Build rule for target.
-std_srvs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
-.PHONY : std_srvs_generate_messages_cpp
-
-# fast build rule for target.
-std_srvs_generate_messages_cpp/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
-.PHONY : std_srvs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named std_srvs_generate_messages_py
-
-# Build rule for target.
-std_srvs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	$(MAKE) -f mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_py.dir/build.make mpu6050_serial_to_imu/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-#=============================================================================
 # Target rules for targets named dynamic_reconfigure_generate_messages_eus
 
 # Build rule for target.
@@ -3481,19 +3403,6 @@ turtle_tf_listener/fast:
 .PHONY : turtle_tf_listener/fast
 
 #=============================================================================
-# Target rules for targets named turtlesim_generate_messages_eus
-
-# Build rule for target.
-turtlesim_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 turtlesim_generate_messages_eus
-.PHONY : turtlesim_generate_messages_eus
-
-# fast build rule for target.
-turtlesim_generate_messages_eus/fast:
-	$(MAKE) -f learning_tf/CMakeFiles/turtlesim_generate_messages_eus.dir/build.make learning_tf/CMakeFiles/turtlesim_generate_messages_eus.dir/build
-.PHONY : turtlesim_generate_messages_eus/fast
-
-#=============================================================================
 # Target rules for targets named turtlesim_generate_messages_lisp
 
 # Build rule for target.
@@ -3546,6 +3455,58 @@ turtlesim_generate_messages_py/fast:
 .PHONY : turtlesim_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named std_srvs_generate_messages_cpp
+
+# Build rule for target.
+std_srvs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_cpp
+.PHONY : std_srvs_generate_messages_cpp
+
+# fast build rule for target.
+std_srvs_generate_messages_cpp/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+.PHONY : std_srvs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named turtlesim_generate_messages_eus
+
+# Build rule for target.
+turtlesim_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 turtlesim_generate_messages_eus
+.PHONY : turtlesim_generate_messages_eus
+
+# fast build rule for target.
+turtlesim_generate_messages_eus/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/turtlesim_generate_messages_eus.dir/build.make learning_tf/CMakeFiles/turtlesim_generate_messages_eus.dir/build
+.PHONY : turtlesim_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_eus
+
+# Build rule for target.
+std_srvs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_eus
+.PHONY : std_srvs_generate_messages_eus
+
+# fast build rule for target.
+std_srvs_generate_messages_eus/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+.PHONY : std_srvs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_py
+
+# Build rule for target.
+std_srvs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
+
+# fast build rule for target.
+std_srvs_generate_messages_py/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
+
+#=============================================================================
 # Target rules for targets named turtle_tf_broadcaster
 
 # Build rule for target.
@@ -3557,6 +3518,32 @@ turtle_tf_broadcaster: cmake_check_build_system
 turtle_tf_broadcaster/fast:
 	$(MAKE) -f learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build.make learning_tf/CMakeFiles/turtle_tf_broadcaster.dir/build
 .PHONY : turtle_tf_broadcaster/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_lisp
+
+# Build rule for target.
+std_srvs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_lisp
+.PHONY : std_srvs_generate_messages_lisp
+
+# fast build rule for target.
+std_srvs_generate_messages_lisp/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+.PHONY : std_srvs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_srvs_generate_messages_nodejs
+
+# Build rule for target.
+std_srvs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_srvs_generate_messages_nodejs
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	$(MAKE) -f learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make learning_tf/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named control_msgs_generate_messages_py
@@ -4305,12 +4292,6 @@ help:
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... tf2_msgs_generate_messages_py"
 	@echo "... mbot_bringup"
-	@echo "... std_srvs_generate_messages_lisp"
-	@echo "... std_srvs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... mpu6050_serial_to_imu_node"
-	@echo "... std_srvs_generate_messages_cpp"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... dynamic_reconfigure_generate_messages_eus"
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... rbx1_nav_gencfg"
@@ -4359,12 +4340,17 @@ help:
 	@echo "... _run_tests_imu_filter_madgwick_gtest"
 	@echo "... _run_tests_imu_filter_madgwick_gtest_imu_filter_madgwick-madgwick_test"
 	@echo "... turtle_tf_listener"
-	@echo "... turtlesim_generate_messages_eus"
 	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_cpp"
 	@echo "... turtlesim_generate_messages_nodejs"
 	@echo "... turtlesim_generate_messages_py"
+	@echo "... std_srvs_generate_messages_cpp"
+	@echo "... turtlesim_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_eus"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... turtle_tf_broadcaster"
+	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... control_msgs_generate_messages_py"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... control_msgs_generate_messages_cpp"
