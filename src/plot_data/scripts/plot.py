@@ -7,14 +7,14 @@ import matplotlib.animation as animation
 import rospy
 from std_msgs.msg import String
 
-newdata = 0.0
-flag = False
+newdata = 5.55
+flag = True
 
 def callback(imgmsg):
     global flag
     global newdata
     flag = True
-    newdata = 360- float(imgmsg.data.split(",")[2].split("!")[0])
+    newdata = float(imgmsg.data.split(",")[0])
     rospy.loginfo("newdata is %s", newdata)
     flag = False
 
@@ -34,15 +34,15 @@ def listener():
     while(not rospy.is_shutdown()):
         global flag
         while(flag):
-            pass
+            rospy.loginfo("Not get data!")
         global num
         global newdata
         num = num[1:] + [newdata]
-        rospy.loginfo("num is %d", num[-1])
+        rospy.loginfo("num is %f", num[-1])
         yield num
 
 
-ani = animation.FuncAnimation(fig, update, listener, interval=1000, repeat=False)
+ani = animation.FuncAnimation(fig, update, listener, interval=100, repeat=False)
 rospy.init_node("listener", anonymous=True)
 rospy.Subscriber("read", String, callback)
 plt.show()
