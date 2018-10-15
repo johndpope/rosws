@@ -50,7 +50,7 @@ int main (int argc, char** argv)
     } 
 
     //指定循环的频率 
-    ros::Rate loop_rate(1); 
+    ros::Rate loop_rate(10); 
     while(ros::ok()) 
     { 
         string yaw, pitch, roll;

@@ -87,7 +87,7 @@ void loop(void)
   Serial.print(pitch, 2);
   Serial.print(",");
   Serial.print(roll, 2);
-  Serial.println("!");
+  Serial.println(",");
 
   //Serial.print(F("ACCEL "));
   //Serial.print("X: "); 
