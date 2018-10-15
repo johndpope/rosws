@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/devel
-
-Name: getPose
-Description: Description of getPose
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/wode/rosws/devel/lib 
-Requires: 

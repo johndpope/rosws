@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/install
-
-Name: rbx1_speech
-Description: Description of rbx1_speech
-Version: 0.4.0
-Cflags: 
-Libs: -L/home/wode/rosws/install/lib 
-Requires: 

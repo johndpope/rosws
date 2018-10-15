@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/devel
-
-Name: rosserial_tivac
-Description: Description of rosserial_tivac
-Version: 0.7.7
-Cflags: 
-Libs: -L/home/wode/rosws/devel/lib 
-Requires: 

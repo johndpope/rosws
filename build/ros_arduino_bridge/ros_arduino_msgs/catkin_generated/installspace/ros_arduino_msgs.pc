@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/install
-
-Name: ros_arduino_msgs
-Description: Description of ros_arduino_msgs
-Version: 0.2.0
-Cflags: -I/home/wode/rosws/install/include
-Libs: -L/home/wode/rosws/install/lib 
-Requires: message_runtime std_msgs

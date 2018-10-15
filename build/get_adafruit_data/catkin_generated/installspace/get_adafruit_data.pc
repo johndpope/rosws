@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/install
-
-Name: get_adafruit_data
-Description: Description of get_adafruit_data
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/wode/rosws/install/lib 
-Requires: 

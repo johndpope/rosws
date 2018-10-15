@@ -1,2 +1,0 @@
-set(arbotix_msgs_MESSAGE_FILES "/home/wode/rosws/src/arbotix_ros/arbotix_msgs/msg/Analog.msg;/home/wode/rosws/src/arbotix_ros/arbotix_msgs/msg/Digital.msg")
-set(arbotix_msgs_SERVICE_FILES "/home/wode/rosws/src/arbotix_ros/arbotix_msgs/srv/Enable.srv;/home/wode/rosws/src/arbotix_ros/arbotix_msgs/srv/Relax.srv;/home/wode/rosws/src/arbotix_ros/arbotix_msgs/srv/SetupChannel.srv;/home/wode/rosws/src/arbotix_ros/arbotix_msgs/srv/SetSpeed.srv")

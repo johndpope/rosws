@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/install
-
-Name: arbotix_firmware
-Description: Description of arbotix_firmware
-Version: 0.10.0
-Cflags: 
-Libs: -L/home/wode/rosws/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/wode/rosws/install
-
-Name: rosserial_test
-Description: Description of rosserial_test
-Version: 0.7.7
-Cflags: 
-Libs: -L/home/wode/rosws/install/lib 
-Requires: rosserial_msgs std_msgs
