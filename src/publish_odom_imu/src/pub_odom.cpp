@@ -1,41 +1,30 @@
-#include "ros/ros.h"
-#include "std_msgs/String.h"
-#include <sstream>
+/*
+从laser_scan_match读取数据
+处理后发布
+发布节点名称为odom
+*/
+#include <ros/ros.h>
+#include <nav_msgs/Odometry.h>
+#include <geometry_msgs/Pose2D.h>
+using namespace std;
 
-int main(){
-    
+ros::Publisher imu_pub;
+nav_msgs::Odometry odom_data;
+
+void dataCallback(const geometry_msgs::Pose2D::ConstPtr &msg)
+{
+    //ROS_INFO("Hello test1_a! I am test1_b. I heard:[%s]",msg->data.c_str());
+    imu_pub.publish(odom_data);
 }
 
-// ros::Publisher chatter_pub;
-// ros::Subscriber sub;
+int main (int argc, char** argv) {
+    ros::init(argc, argv, "odom_pub");
+    ros::NodeHandle n;
 
-// void callback(const std_msgs::StringPtr &msg)
-// {
-//     std::stringstream ss;
-//     msg.data = "test";
+    imu_pub = n.advertise<nav_msgs::Odometry>("odom", 100);
+    ros::Subscriber sub = n.subscribe("pose2D", 100, dataCallback);
 
-//     ROS_INFO("%s", msg.data.c_str());
+    ros::spin();
 
-//     chatter_pub.publish(msg);
-// }
-
-
-// int main(int argc, char **argv)
-// {
-
-//     ros::init(argc, argv, "odom_pub");
-
-// 	ros::NodeHandle n;
-	
-//     chatter_pub = n.advertise<std_msgs::String>("odom", 1000);
-// 	sub = n.subscribe("/test", 1, &callback);
-
-//     ros::Rate loop_rate(10);
-
-
-// 	ROS_INFO("Please send message!");
-	
-// 	ros::spin();
-	
-//     return 0;
-// }
+    return 0;
+}
