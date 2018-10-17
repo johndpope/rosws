@@ -73,21 +73,22 @@ void loop(void)
   MadgwickQuaternionUpdate(event.acceleration.x, event.acceleration.y, event.acceleration.z,
                            event.gyro.x, event.gyro.y, event.gyro.z);
 
-  yaw   = atan2(2.0f * (q[1] * q[2] + q[0] * q[3]), q[0] * q[0] + q[1] * q[1] - q[2] * q[2] - q[3] * q[3]);
-  pitch = -asin(2.0f * (q[1] * q[3] - q[0] * q[2]));
-  roll  = atan2(2.0f * (q[0] * q[1] + q[2] * q[3]), q[0] * q[0] - q[1] * q[1] - q[2] * q[2] + q[3] * q[3]);
-
-  pitch *= 180.0f / PI;
-  yaw   *= 180.0f / PI;
-  roll  *= 180.0f / PI;
-
-  //Serial.print("Yaw, Pitch, Roll: ");
-  Serial.print(yaw, 2);
-  Serial.print(",");
-  Serial.print(pitch, 2);
-  Serial.print(",");
-  Serial.print(roll, 2);
-  Serial.println(",");
+//  yaw   = atan2(2.0f * (q[1] * q[2] + q[0] * q[3]), q[0] * q[0] + q[1] * q[1] - q[2] * q[2] - q[3] * q[3]);
+//  pitch = -asin(2.0f * (q[1] * q[3] - q[0] * q[2]));
+//  roll  = atan2(2.0f * (q[0] * q[1] + q[2] * q[3]), q[0] * q[0] - q[1] * q[1] - q[2] * q[2] + q[3] * q[3]);
+//
+//  pitch *= 180.0f / PI;
+//  yaw   *= 180.0f / PI;
+//  roll  *= 180.0f / PI;
+//
+//  //Serial.print("Yaw, Pitch, Roll: ");
+//  Serial.print(yaw, 2);
+//  Serial.print(",");
+//  Serial.print(pitch, 2);
+//  Serial.print(",");
+//  Serial.print(roll, 2);
+//  Serial.println(",");
+    Serial.println(String(q[0]) + "," + String(q[1]) + "," + String(q[2]) + "," + String(q[3]) + ",");
 
   //Serial.print(F("ACCEL "));
   //Serial.print("X: "); 
@@ -136,7 +137,7 @@ void loop(void)
 //  }
   
 //  Serial.println(F(""));
-  //delay(1000);
+ // delay(10);
 }
 
 void MadgwickQuaternionUpdate(float ax, float ay, float az, float gx, float gy, float gz)

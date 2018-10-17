@@ -13,7 +13,11 @@ nav_msgs::Odometry odom_data;
 
 void dataCallback(const geometry_msgs::Pose2D::ConstPtr &msg)
 {
-    //ROS_INFO("Hello test1_a! I am test1_b. I heard:[%s]",msg->data.c_str());
+    odom_data.header.stamp = ros::Time::now();
+    odom_data.header.frame_id = "odom";
+    odom_data.pose.pose.position.x = msg->x;
+    odom_data.pose.pose.position.y = msg->y;
+    odom_data.pose.pose.position.z = 0;
     imu_pub.publish(odom_data);
 }
 
