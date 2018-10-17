@@ -1,0 +1,27 @@
+<!--
+Example launch file: launches the scan matcher with pre-recorded data
+-->
+
+<launch>  
+  <include file="$(find rplidar_ros)/launch/rplidar.launch" />
+  <arg name="IS_TWISTSTAMPED" default="true" />
+  
+  <param name="/stamped_vel" value="$(arg IS_TWISTSTAMPED)"/>
+
+
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
+    args="0 0 0 0 0 0 /base_link /laser 40" />
+
+<!--  
+  <node pkg="getpose" type="pose" name="pose" output="screen" />
+-->
+
+  <node pkg="laser_scan_matcher" type="laser_scan_matcher_node" name="laser_scan_matcher_node" output="screen">
+    <param name="max_iterations" value="10"/>
+    <param name="publish_pose_" value="true"/>
+    <param name="publish_tf" value="true"/>
+    <param name="use_odom_" value="false"/>
+  <remap from="odom" to="scan_odom" />  
+  </node>
+
+</launch>

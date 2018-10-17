@@ -1,0 +1,9 @@
+<launch>
+
+<node pkg="publish_odom_imu" type="pub_imu" name="pub_imu">
+    <param name="odom_pub" value="true"/>
+    <param name="imu_pub" value="false"/>
+    <param name="serial_port" value="/dev/ttyUSB2"/>
+</node>
+
+</launch>
