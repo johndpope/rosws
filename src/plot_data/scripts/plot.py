@@ -8,7 +8,8 @@ import rospy
 from std_msgs.msg import String
 
 newdata = 0.00
-flag = True
+flag = True  #表示是否接收到newdata 当值为true时表示没有接收到数据
+num =[0.0 for _ in range(600)] #画图数据
 data_index = int(input("input num of data:")) - 1
 
 def callback(imgmsg):
@@ -22,7 +23,6 @@ def callback(imgmsg):
     rospy.loginfo("newdata is %s", newdata)
     flag = False
 
-num =[0.0 for _ in range(600)]
 xaxes = [x for x in range(0, 600)]
 fig = plt.figure() 
 axes1 = fig.add_subplot(111) 
@@ -50,7 +50,7 @@ def listener():
         global newdata
         num = num[1:] + [newdata]
         rospy.loginfo("num is %f", num[-1])
-        yield num
+        yield num  #利用迭代器返回数据传给update函数
 
 ani = animation.FuncAnimation(fig, update, listener, interval=100, repeat=False)
 rospy.init_node("listener", anonymous=True)
